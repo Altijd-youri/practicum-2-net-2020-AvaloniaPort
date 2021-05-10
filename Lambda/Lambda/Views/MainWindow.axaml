@@ -1,0 +1,42 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="700" d:DesignHeight="500"
+        x:Class="Lambda.Views.MainWindow"
+        Title="Window">
+    <DockPanel LastChildFill="True">
+        <StackPanel Orientation="Vertical">
+            <StackPanel Margin="10" HorizontalAlignment="Left">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Label Width="100" Target="Box1">Number 1</Label>
+                    <TextBox Name="Box1" />
+                    
+                    <Button Click="Button1_Click">
+                        <Button.Margin>50 0 0 0 </Button.Margin>
+                        <Button.Padding>25 5 </Button.Padding>
+                        <Button.Content>Go!</Button.Content>
+                    </Button>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Width="100" Target="Box2">Number 2</Label>
+                    <TextBox Name="Box2" />
+                </StackPanel>
+                <StackPanel  Orientation="Horizontal">
+                    <Label Width="100" Target="Box3">Number 3</Label>
+                    <TextBox Name="Box3" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Margin="10" HorizontalAlignment="Left" Orientation="Horizontal">
+                <StackPanel Orientation="Vertical" Width="330">
+                    <TextBlock Text="Method output"></TextBlock>
+                    <TextBox Name="OutputMethod" MinHeight="330"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Width="330">
+                    <TextBlock Text="Lambda output"></TextBlock>
+                    <TextBox Name="OutputLambda" MinHeight="330" />
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </DockPanel>
+</Window>

@@ -1,10 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
-        <TargetFramework>net5.0-windows</TargetFramework>
-        <UseWindowsForms>true</UseWindowsForms>
+        <TargetFramework>net5.0</TargetFramework>
+        <Nullable>enable</Nullable>
         <RootNamespace>Lambda</RootNamespace>
     </PropertyGroup>
-
+    <ItemGroup>
+        <PackageReference Include="Avalonia" Version="0.10.2" />
+        <PackageReference Include="Avalonia.Desktop" Version="0.10.2" />
+        <PackageReference Include="Avalonia.Diagnostics" Version="0.10.2" />
+        <PackageReference Include="Avalonia.ReactiveUI" Version="0.10.2" />
+    </ItemGroup>
 </Project>
